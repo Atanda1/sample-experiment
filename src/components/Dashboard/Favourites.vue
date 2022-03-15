@@ -1,22 +1,15 @@
 <template>
-  <h1 class="container-dashboard__inner__content__lead">
-    Favourites
-  </h1>
+  <h1 class="container-dashboard__inner__content__lead">Favourites</h1>
   <div v-if="empty">
-    <h2 class="container-dashboard__inner__content__title">
-      Name
-    </h2>
+    <h2 class="container-dashboard__inner__content__title">Name</h2>
     <accordion :name-list="nameList" />
   </div>
-  <div
-    v-else
-    class="container-dashboard__inner__content__empty"
-  >
+  <div v-else class="container-dashboard__inner__content__empty">
     <div class="container-dashboard__inner__content__empty__container">
       <img
         class="container-dashboard__inner__content__empty__container__image"
         src="../../assets/emptyLove.svg"
-      >
+      />
       <h3 class="container-dashboard__inner__content__empty__container__title">
         No names have been saved
       </h3>

@@ -20,10 +20,7 @@
           fill="#787676"
         />
       </svg>
-      <h3
-        id="text"
-        class="container-dashboard__inner__sidebar__option__text"
-      >
+      <h3 id="text" class="container-dashboard__inner__sidebar__option__text">
         My Account
       </h3>
     </div>
@@ -45,10 +42,7 @@
         />
       </svg>
 
-      <h3
-        id="text"
-        class="container-dashboard__inner__sidebar__option__text"
-      >
+      <h3 id="text" class="container-dashboard__inner__sidebar__option__text">
         Favourites
       </h3>
     </div>
@@ -89,9 +83,7 @@
       />
     </svg>
 
-    <h3 class="container-dashboard__inner__sidebar__option__text">
-      About
-    </h3>
+    <h3 class="container-dashboard__inner__sidebar__option__text">About</h3>
   </div>
 </template>
 

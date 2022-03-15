@@ -1,45 +1,23 @@
 <template>
   <div class="modal">
     <div class="modal__header">
-      <div class="modal__header__title">
-        Add/Edit Text Records
-      </div>
+      <div class="modal__header__title">Add/Edit Text Records</div>
       <img
         class="modal__header__close"
         type="reset"
         src="../../assets/close.svg"
         @click="closeModal"
-      >
+      />
     </div>
     <label class="modal__label">email</label>
-    <input
-      type="number"
-      placeholder="not set"
-      class="modal__input"
-    >
+    <input type="number" placeholder="not set" class="modal__input" />
     <label class="modal__label">url</label>
-    <input
-      type="number"
-      placeholder="not set"
-      class="modal__input"
-    >
+    <input type="number" placeholder="not set" class="modal__input" />
     <label class="modal__label">avatar</label>
-    <input
-      type="number"
-      placeholder="not set"
-      class="modal__input"
-    >
+    <input type="number" placeholder="not set" class="modal__input" />
     <label class="modal__label">descriptions</label>
-    <input
-      type="number"
-      placeholder="not set"
-      class="modal__input"
-    >
-    <div
-      v-for="(item, counter) in items"
-      :key="counter"
-      class="previous"
-    >
+    <input type="number" placeholder="not set" class="modal__input" />
+    <div v-for="(item, counter) in items" :key="counter" class="previous">
       <div class="flex">
         <input
           v-model="item.key"
@@ -47,12 +25,12 @@
           placeholder="label"
           type="text"
           required
-        >
+        />
         <img
           class="add__close"
           src="../../assets/close.svg"
           @click="deleteItem(counter)"
-        >
+        />
       </div>
       <input
         v-model="item.value"
@@ -60,20 +38,13 @@
         placeholder="value"
         type="text"
         required
-      >
+      />
     </div>
-    <div
-      class="modal__record"
-      @click="addItem"
-    >
-      <img src="../../assets/plus.svg">
-      <h2 class="modal__record__text cursor">
-        Add New Record
-      </h2>
+    <div class="modal__record" @click="addItem">
+      <img src="../../assets/plus.svg" />
+      <h2 class="modal__record__text cursor">Add New Record</h2>
     </div>
-    <button class="modal__button">
-      Save
-    </button>
+    <button class="modal__button">Save</button>
   </div>
 </template>
 <script>

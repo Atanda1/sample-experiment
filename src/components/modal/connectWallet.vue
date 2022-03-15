@@ -1,14 +1,8 @@
 <template>
   <div class="modal">
     <div class="modal__connect">
-      <div
-        class="cursor"
-        @click="connectMetamaskWallet"
-      >
-        <img
-          class="ma-left"
-          src="../../assets/metamask.svg"
-        >
+      <div class="cursor" @click="connectMetamaskWallet">
+        <img class="ma-left" src="../../assets/metamask.svg" />
         <h3 class="container-dashboard__inner__content__lead__modal">
           Metamask
         </h3>
@@ -16,14 +10,8 @@
           Connect to your Metamask Wallet
         </h4>
       </div>
-      <div
-        class="cursor"
-        @click="connectUserWalletConnect"
-      >
-        <img
-          class="ma-left"
-          src="../../assets/walletConnect.svg"
-        >
+      <div class="cursor" @click="connectUserWalletConnect">
+        <img class="ma-left" src="../../assets/walletConnect.svg" />
         <h3 class="container-dashboard__inner__content__lead__modal">
           Wallet Connect
         </h3>

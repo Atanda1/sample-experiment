@@ -4,7 +4,7 @@
       <img
         class="container-dashboard__inner__sidebar__img"
         src="../../assets/logo.svg"
-      >
+      />
     </router-link>
     <div class="container-dashboard__header">
       <navdropdown />

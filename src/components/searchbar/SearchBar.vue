@@ -1,16 +1,11 @@
 <template>
   <div class="search__container__input__header">
-    <img
-      class="search__container__input__icon"
-      src="../../assets/search.svg"
-    >
+    <img class="search__container__input__icon" src="../../assets/search.svg" />
     <input
       class="search__container__input__tag"
       placeholder="Search names or addresses"
-    >
-    <button class="search__container__button__header">
-      Search
-    </button>
+    />
+    <button class="search__container__button__header">Search</button>
   </div>
 </template>
 
