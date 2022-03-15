@@ -1,8 +1,8 @@
 import { createWebHistory, createRouter } from "vue-router";
 import Dashboard from "@/views/Dashboard.vue";
 import Search from "@/views/Search.vue";
-import Account from "@/components/Dashboard/Account.vue";
-import Favourites from "@/components/Dashboard/Favourites.vue";
+import Account from "@/components/dashboard/Account.vue";
+import Favourites from "@/components/dashboard/Favourites.vue";
 
 const routes = [
   {
