@@ -1,10 +1,22 @@
 <template>
   <div class="search__buttons">
-    <h2 class="search__buttons__docs cursor" @click="openDocs">Docs</h2>
-    <button v-if="status" class="search__buttons__wallet">
+    <h2
+      class="search__buttons__docs cursor"
+      @click="openDocs"
+    >
+      Docs
+    </h2>
+    <button
+      v-if="status"
+      class="search__buttons__wallet"
+    >
       <h3>Connected</h3>
     </button>
-    <button v-else class="search__buttons__wallet" @click="pushModal">
+    <button
+      v-else
+      class="search__buttons__wallet"
+      @click="pushModal"
+    >
       <h3>Connect Wallet</h3>
     </button>
   </div>

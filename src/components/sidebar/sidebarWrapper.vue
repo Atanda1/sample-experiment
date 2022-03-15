@@ -1,10 +1,11 @@
 <template>
   <div class="container-dashboard__inner__sidebar">
-    <router-link :to="{ name: 'search' }"
-      ><img
+    <router-link :to="{ name: 'search' }">
+      <img
         class="container-dashboard__inner__sidebar__img"
         src="../../assets/logo.svg"
-    /></router-link>
+      >
+    </router-link>
     <div class="container-dashboard__header">
       <navdropdown />
     </div>

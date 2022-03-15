@@ -1,22 +1,28 @@
 <template>
   <div class="container-dashboard__header__pro1">
     <div class="container-dashboard__header__profile">
-      <img src="../../assets/nft.svg" class="ma4 dp" />
+      <img
+        src="../../assets/nft.svg"
+        class="ma4 dp"
+      >
       <h5 class="container-dashboard__header__profile__name ma4">
         {{ cardAddress }}
       </h5>
-      <img src="../../assets/dropdown.svg" />
+      <img src="../../assets/dropdown.svg">
     </div>
     <div class="container-dashboard__header__pro">
-      <div class="container-dashboard__header__profi" @click="copy">
-        <h2 class="container-dashboard__header__profi__title">My wallet</h2>
+      <div
+        class="container-dashboard__header__profi"
+        @click="copy"
+      >
+        <h2 class="container-dashboard__header__profi__title">
+          My wallet
+        </h2>
         <div class="container-dashboard__header__profi__wallet">
-          <img src="../../assets/nft.svg" />
+          <img src="../../assets/nft.svg">
           <div class="container-dashboard__header__profi__wallet__details">
             <h3
-              class="
-                container-dashboard__header__profi__wallet__details__address
-              "
+              class="container-dashboard__header__profi__wallet__details__address"
             >
               {{ secondCardAddress }}
             </h3>
@@ -26,7 +32,7 @@
               Mainnet
             </h3>
           </div>
-          <img src="../../assets/copyIcon.svg" />
+          <img src="../../assets/copyIcon.svg">
         </div>
       </div>
       <div class="container-dashboard__header__profi__disconnect">

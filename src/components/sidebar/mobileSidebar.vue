@@ -1,8 +1,14 @@
-  <template>
+<template>
   <div class="hamburger-menu">
-    <input id="menu__toggle" type="checkbox" />
-    <label class="menu__btn" for="menu__toggle">
-      <span></span>
+    <input
+      id="menu__toggle"
+      type="checkbox"
+    >
+    <label
+      class="menu__btn"
+      for="menu__toggle"
+    >
+      <span />
     </label>
 
     <ul class="menu__box">
@@ -10,14 +16,12 @@
         class="menu__item"
         exact-active-class="exact-active"
         :href="$router.resolve({ name: 'account' }).href"
-        >My Account</a
-      >
+      >My Account</a>
       <a
         class="menu__item"
         exact-active-class="exact-active"
         :href="$router.resolve({ name: 'favourites' }).href"
-        >Favourites</a
-      >
+      >Favourites</a>
     </ul>
   </div>
 </template>

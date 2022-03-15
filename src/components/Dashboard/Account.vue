@@ -1,12 +1,18 @@
 <template>
   <div v-if="!registered">
-    <h2 class="container-dashboard__inner__content__title">Name</h2>
-    <accordion :nameList="nameList" />
+    <h2 class="container-dashboard__inner__content__title">
+      Name
+    </h2>
+    <accordion :name-list="nameList" />
   </div>
   <div v-else>
-    <h1 class="container-dashboard__inner__content__lead">My Account</h1>
-    <h2 class="container-dashboard__inner__content__title">Registered Names</h2>
-    <accordion :nameList="nameList" />
+    <h1 class="container-dashboard__inner__content__lead">
+      My Account
+    </h1>
+    <h2 class="container-dashboard__inner__content__title">
+      Registered Names
+    </h2>
+    <accordion :name-list="nameList" />
   </div>
 </template>
 

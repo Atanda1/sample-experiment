@@ -4,7 +4,8 @@
     tag="li"
     exact-active-class="exact-active"
     exact
-    ><div class="container-dashboard__inner__sidebar__option">
+  >
+    <div class="container-dashboard__inner__sidebar__option">
       <svg
         width="16"
         height="19"
@@ -19,14 +20,17 @@
           fill="#787676"
         />
       </svg>
-      <h3 class="container-dashboard__inner__sidebar__option__text" id="text">
+      <h3
+        id="text"
+        class="container-dashboard__inner__sidebar__option__text"
+      >
         My Account
       </h3>
-    </div></router-link
-  >
+    </div>
+  </router-link>
 
-  <router-link :to="{ name: 'favourites' }"
-    ><div class="container-dashboard__inner__sidebar__option">
+  <router-link :to="{ name: 'favourites' }">
+    <div class="container-dashboard__inner__sidebar__option">
       <svg
         width="18"
         height="16"
@@ -41,11 +45,14 @@
         />
       </svg>
 
-      <h3 id="text" class="container-dashboard__inner__sidebar__option__text">
+      <h3
+        id="text"
+        class="container-dashboard__inner__sidebar__option__text"
+      >
         Favourites
       </h3>
-    </div></router-link
-  >
+    </div>
+  </router-link>
 
   <div class="container-dashboard__inner__sidebar__option">
     <svg
@@ -82,7 +89,9 @@
       />
     </svg>
 
-    <h3 class="container-dashboard__inner__sidebar__option__text">About</h3>
+    <h3 class="container-dashboard__inner__sidebar__option__text">
+      About
+    </h3>
   </div>
 </template>
 
