@@ -1,0 +1,67 @@
+.ma1 {
+    margin-top: 0.5rem;
+    &1 {
+      margin-top: 1.2rem;
+    }
+    &2 {
+      margin-top: 1.6rem;
+    }
+  }
+  
+  .ma2 {
+    margin-top: 2rem;
+  }
+  
+  .ma3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .ma4 {
+    margin-right: 1rem;
+    &1 {
+      margin-right: .7rem;
+    }
+  }
+  
+  .ma5 {
+    margin-right: 1.5rem;
+  }
+  
+  .ma6 {
+    margin-bottom: 2rem;
+  }
+
+  .ma9 {
+    margin-top: 4rem !important;
+  }
+
+  .ma-left {
+    padding-left: 3rem;
+    margin: 0 auto;
+    @media screen and (max-width: $small) {
+      margin: 0;
+    }
+  }
+  .col {
+    width: 100%;
+  }
+  
+  .row .col {
+    flex: 1;
+  }
+  .row .col:last-child {
+    margin-left: 1em;
+  }
+  
+
+  /* Accordion styles */
+  
+   /* dp styles */
+   .dp {
+     height: 3rem;
+   }
+#click {
+  text-decoration: underline solid $blue;
+  color: $blue !important;
+  cursor: pointer;
+}

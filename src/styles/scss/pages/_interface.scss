@@ -1,0 +1,141 @@
+.container__inner {
+	// grid-column: col-start/col-end;
+	// margin: 0 auto;
+	// padding-top: 1.5%;
+	// width: 50%;
+	// @media screen and (max-width: $large) {
+	// 	width: 70%;
+ 	// }
+	// @media screen and (max-width: $big-mid) {
+	// 	width: 75%;
+ 	// }
+	// @media screen and (max-width: $medium) {
+	// 	width: 65%;
+ 	// }
+	//  @media screen and (max-width: $small-mid) {
+	// 	width: 80%;
+ 	// }
+	// @media screen and (max-width: $small) {
+	// 	width: 100%;
+ 	// }
+	&__img {
+		padding-bottom: 10%;
+		padding-top: 7%;
+		margin: 0 auto;
+		&__verify {
+			padding-bottom: 5%;
+			@media screen and (max-width: $small-mid) {
+				padding-bottom: 5%;
+				width: 50%;
+				height: 3rem;
+				margin: 0 auto;
+				padding-top: 17%;
+				justify-self: center;
+		 }
+		}
+		@media screen and (max-width: $small-mid) {
+			padding-bottom: 10%;
+			width: 50%;
+			height: 3rem;
+			margin: 0 auto;
+			padding-top: 17%;
+			justify-self: center;
+	 }
+	}
+	&__div {
+		width: 50%;
+		margin: 0 auto;
+		@media screen and (max-width: $medium) {
+			width: 70%;
+			margin: 0 auto;
+	  }
+		@media screen and (max-width: $small-mid) {
+			width: 100%;
+    	margin: 0 auto;
+			padding-top: 15%;
+	 }
+		&__sub {
+			padding: 2rem;
+		background-color: $white;
+		box-shadow: 0px 1px 10px rgba(120, 118, 118, 0.05);
+		}
+		&__verify {
+			color: $black;
+			font-weight: bold;
+			font-family: 'DM Sans', sans-serif;
+			font-size: 2.4rem;
+			line-height: 3.1rem;
+		}
+		&__info {
+			padding-top: 5%;
+			color: $grey;
+			font-weight: 500;
+			font-size: 1.7rem;
+			font-family: 'DM Sans', sans-serif;
+			margin: 0 auto;
+			line-height: 2.6rem;
+		}
+		&__input {
+			text-align: left;
+			margin-top: 5%;
+			width: 100%;
+			
+			label {
+				color: $dark-black;
+				font-size: 1.6rem;
+				line-height: 2.6rem;
+				font-weight: 600;
+			}
+			input {
+				width: inherit;
+				height: 6rem;
+				border: 1px solid $grey;
+				padding: 1rem 2rem;
+				border-radius: 5px;
+				font-size: 1.6rem;
+				color: $grey;
+			}
+		}
+		&__button {
+			background: #1C82FF;
+			width: 100%;
+			cursor: pointer;
+			font-family: 'DM Sans', sans-serif;
+			color: $white;
+			padding: 1rem 2rem;
+			height: 6rem;
+			border: none;
+			border-radius: 5px;
+			font-weight: bold;
+			font-size: 1.7rem;
+			line-height: 3.1rem;
+		}
+		&__info {
+			display: flex;
+			justify-content: center;
+			font-size: 1.6rem;
+			&__resend {
+				color: $blue;
+				font-weight: bold;
+				margin-left: .3rem;
+			}
+		}
+		&__accordion {
+			display: flex;
+			border: 1px solid $cement-background;
+			margin: 0 5rem 3rem 3rem;
+			@media screen and (max-width: $small) {
+				margin: 0 3rem 3rem 3rem;
+			}
+			
+			&__img {
+				margin-left: 1.2rem;
+			}
+		}
+	}
+}
+
+
+
+
+

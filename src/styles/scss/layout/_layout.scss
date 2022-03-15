@@ -1,0 +1,325 @@
+.container {
+  display: grid;
+  height: 100vh;
+  //grid-template-rows: auto;
+  grid-template-columns:
+    [full-start] minmax(1rem, auto) [col-start] repeat(
+      2,
+      [inner-col-start] minmax(min-content, 45vw) [inner-col-end]
+    )
+    [col-end] minmax(1rem, auto) [full-end];
+  background: $lower-bgcolor; /* Old browsers */
+  // background: -moz-linear-gradient(
+  //   top,
+  //   $upper-bgcolor 0%,
+  //   $upper-bgcolor 50%,
+  //   $lower-bgcolor 50%,
+  //   $lower-bgcolor 100%
+  // );
+  background-repeat: no-repeat; /* FF3.6+ */
+  // background: -webkit-gradient(
+  //   linear,
+  //   left top,
+  //   right top,
+  //   color-stop(0%, $upper-bgcolor),
+  //   color-stop(50%, $upper-bgcolor),
+  //   color-stop(30%, $lower-bgcolor),
+  //   color-stop(100%, $lower-bgcolor)
+  // ); /* Chrome,Safari4+ */
+  // background: -webkit-linear-gradient(
+  //   top,
+  //   $upper-bgcolor 0%,
+  //   $upper-bgcolor 50%,
+  //   $lower-bgcolor 50%,
+  //   $lower-bgcolor 100%
+  // ); /* Chrome10+,Safari5.1+ */
+  // background: -o-linear-gradient(
+  //   top,
+  //   $upper-bgcolor 0%,
+  //   $upper-bgcolor 50%,
+  //   $lower-bgcolor 50%,
+  //   $lower-bgcolor 100%
+  // ); /* Opera 11.10+ */
+  // background: -ms-linear-gradient(
+  //   top,
+  //   $upper-bgcolor 0%,
+  //   $upper-bgcolor 50%,
+  //   $lower-bgcolor 50%,
+  //   $lower-bgcolor 100%
+  // ); /*IE10+*/
+  // background: linear-gradient(
+  //   to bottom,
+  //   $upper-bgcolor 0%,
+  //   $upper-bgcolor 50%,
+  //   $lower-bgcolor 50%,
+  //   $lower-bgcolor 100%
+  // ); /* W3C */
+
+  @media screen and (max-width: $medium) {
+    grid-template-columns:
+      [full-start] minmax(1rem, auto) [col-start] repeat(
+        2,
+        [inner-col-start] minmax(min-content, 60vw) [inner-col-end]
+      )
+      [col-end] minmax(1rem, auto) [full-end];
+  }
+  @media screen and (min-width: $large) {
+    grid-template-columns:
+      [full-start] minmax(1rem, auto) [col-start] repeat(
+        2,
+        [inner-col-start] minmax(min-content, 50vw) [inner-col-end]
+      )
+      [col-end] minmax(1rem, auto) [full-end];
+  }
+  @media screen and (max-width: $small-mid) {
+    grid-template-columns:
+      [full-start] minmax(1rem, auto) [col-start] repeat(
+        2,
+        [inner-col-start] minmax(min-content, 60vw) [inner-col-end]
+      )
+      [col-end] minmax(1rem, auto) [full-end];
+  }
+}
+
+.container-dashboard {
+  display: grid;
+  //grid-template-rows: 100vh;
+  // grid-template-columns: [full-start] minmax(0rem, 0rem) [col-start] repeat(2, [inner-col-start] minmax(min-content, 49vw) [inner-col-end]) [col-end] minmax(0rem, 0rem)  [full-end];
+  @media screen and (min-width: $mid) {
+    grid-template-rows: 100vh;
+  }
+  &__inner {
+    grid-column: 100%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2.5fr 8fr;
+
+    &__sidebar {
+      padding-top: 5rem;
+      padding-left: 15%;
+      background-color: $lower-bgcolor;
+      @media screen and (max-width: $mid) {
+        padding-left: 5%;
+        padding-right: 5%;
+        display: flex;
+        padding-top: 3rem;
+        align-items: center;
+        padding-bottom: 2rem;
+      }
+      &__img {
+        height: 3rem;
+      }
+      &__option {
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem;
+        &__text {
+          font-size: 1.8rem;
+          font-family: "Sora";
+          margin-left: 2rem;
+          color: $grey;
+        }
+        @media screen and (max-width: $mid) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: $mid) {
+        //display: ;
+      }
+    }
+    &__content {
+      background-color: $white;
+      &__empty {
+        display: flex;
+        border: 1px solid $cement-background;
+        margin: 0 5rem 3rem 3rem;
+        height: 27rem;
+        justify-content: center;
+        align-items: center;
+        &__container {
+          &__image {
+            margin: 0 auto;
+            margin-bottom: 2.4rem;
+          }
+          &__title {
+            font-size: 2rem;
+            text-align: center;
+            font-family: "Sora";
+            font-weight: 400;
+            line-height: 2.5rem;
+          }
+          &__subtitle {
+            color: $grey;
+            margin-top: 2rem;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      &__lead {
+        font-size: 2.4rem;
+        font-family: "Sora";
+        text-align: left;
+        line-height: 3rem;
+        font-weight: 600;
+        margin: 5rem 0 2rem 3rem;
+        //margin-left: 3rem;
+        &__modal {
+          font-size: 2.4rem;
+          font-family: "Sora";
+          text-align: center;
+          line-height: 3rem;
+          font-weight: 600;
+          margin: 2rem 0 2rem 3rem;
+          @media screen and (max-width: $small) {
+            text-align: left;
+            margin: 3rem 0 2rem 3rem;
+          }
+        }
+      }
+      &__title {
+        font-size: 1.8rem;
+        font-family: "Sora";
+        margin: 5rem 0 3rem 3rem;
+        text-align: left;
+        color: $grey;
+        &__modal {
+          font-size: 1.8rem;
+        font-family: "Sora";
+        margin: 2rem 0 3rem 3rem;
+        text-align: center;
+        line-height: 3rem;
+        color: $grey;
+        @media screen and (max-width: $small) {
+          text-align: left;
+            margin: 3rem 0 2rem 3rem;
+        }
+        }
+      }
+    }
+    @media screen and (max-width: $mid) {
+      grid-template-columns: 1fr;
+    }
+  }
+  //  @media screen and (max-width: $big-mid) {
+  //     //grid-template-columns: [full-start]minmax(0rem, 0rem)  [col-start] repeat(2, [inner-col-start] minmax(min-content, 60vw) [inner-col-end]) [col-end] minmax(0rem, 0rem)  [full-end];
+  //  }
+  //  @media screen and (min-width: $large) {
+  //     grid-template-columns: [full-start] minmax(1rem, auto)  [col-start] repeat(2, [inner-col-start] minmax(min-content, 35vw) [inner-col-end]) [col-end] minmax(0rem, 0rem)  [full-end];
+  //  }
+  //  @media screen and (max-width: $small-mid) {
+  //   grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 60vw) [inner-col-end]) [col-end] minmax(0rem, 0rem)[full-end];
+  //  }
+  //  @media screen and (max-height: $small-height) {
+  //   grid-template-rows:  min-content;
+  //  }
+}
+
+.search {
+  &__buttons {
+    grid-column: inner-col-end;
+    display: flex;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: 3rem;
+    align-items: center;
+    justify-content: right;
+    @media screen and (max-width: $small) {
+      margin-right: 0rem;
+    }
+
+    &__docs {
+      margin-right: 4rem;
+      font-family: "Sora";
+      font-weight: 600;
+      font-size: 2rem;
+    }
+    &__wallet {
+      background-color: $blue;
+      border: none;
+      color: $white;
+      font-family: "Sora";
+      border-radius: 3rem;
+      padding: 2rem 3rem;
+      font-weight: 600;
+      font-size: 2rem;
+      @media screen and (max-width: $small) {
+        width: 22rem;
+      }
+    }
+  }
+  &__container {
+    grid-column: col-start/col-end;
+    display: flex;
+    padding-top: 15%;
+    justify-content: center;
+    //align-items: center;
+    @media screen and (max-width: $small) {
+      margin-top: 40%;
+    }
+    &__image {
+      margin: 0 auto;
+    }
+    &__button {
+      background-color: $blue;
+      border: none;
+      color: $white;
+      font-family: "Sora";
+      border-radius: 3rem;
+      padding: 2rem 3rem;
+      font-weight: 600;
+      font-size: 2rem;
+      //margin-left: auto;
+      margin: 1rem 1rem 1rem auto;
+      width: 40%;
+      &__header {
+        background-color: $blue;
+        border: none;
+        color: $white;
+        font-family: "Sora";
+        border-radius: 3rem;
+        padding: 2rem 3rem;
+        font-weight: 600;
+        font-size: 2rem;
+        margin: 1rem 8rem 1rem auto;
+        width: 20%;
+        @media screen and (max-width: $small) {
+          margin: 1rem 1rem 1rem 1rem;
+          padding: 2rem 1rem;
+        }
+      }
+    }
+    &__input {
+      border: 1px solid $input-border;
+      background-color: $lower-bgcolor;
+      display: flex;
+      width: 50vw;
+      margin-top: 8%;
+      border-radius: 30px;
+      @media screen and (max-width: $mid) {
+        width: 100%;
+      }
+      &__header {
+        border: 1px solid $input-border;
+        background-color: $lower-bgcolor;
+        display: flex;
+        width: 100%;
+        @media screen and (max-width: $mid) {
+          width: 90%;
+          margin: 0 auto;
+          border-radius: 10px;
+        }
+      }
+      &__icon {
+        margin: 3rem 2rem 3rem 3rem;
+      }
+      &__tag {
+        border: none;
+        background-color: $lower-bgcolor;
+        color: grey;
+        width: 100%;
+        font-family: "Sora";
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
