@@ -1,5 +1,5 @@
 <template>
-  <div class="modal__service">
+  <div class="modal">
     <div class="modal__connect">
       <div class="cursor" @click="connectMetamaskWallet">
         <img class="ma-left" src="../../assets/metamask.svg" />
