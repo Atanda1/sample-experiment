@@ -27,7 +27,7 @@
           required
         />
         <img
-          class="add__close"
+          class="add__close cursor"
           src="../../assets/close.svg"
           @click="deleteItem(counter)"
         />
